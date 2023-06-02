@@ -1,0 +1,45 @@
+{
+  "enquiry": [
+    {
+      "firstName": "Ravinder",
+      "lastName": "Sharma",
+      "email": "ravinder@gmail.com",
+      "mobile": "9988776655",
+      "weight": 60,
+      "height": 1.7,
+      "bmi": 17.301038062283737,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "No",
+      "package": "Quarterly",
+      "important": [
+        "Energy and Endurance",
+        "Building Lean Muscle",
+        "Healthier Digestive System"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-05-31T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "firstName": "MS",
+      "lastName": "Dhoni",
+      "email": "ms@gmail.com",
+      "mobile": "9988990090",
+      "weight": 90,
+      "height": 1.9,
+      "bmi": 24.930747922437675,
+      "bmiResult": "Normal",
+      "gender": "Male",
+      "requireTrainer": "No",
+      "package": "Yearly",
+      "important": [
+        "Toxic Fat reduction",
+        "Energy and Endurance"
+      ],
+      "haveGymBefore": "Yes",
+      "enquiryDate": "2023-05-03T18:30:00.000Z",
+      "id": 2
+    }
+  ]
+}

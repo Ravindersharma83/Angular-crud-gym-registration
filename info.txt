@@ -1,4 +1,6 @@
 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 (PAT- git)
 - Installing angular material
     - ng add @angular/material
-    
+- setup routes and creating components file.
+- creating a create-register component.
+- Adding reactive form to handle input field values of register component.
