@@ -16,6 +16,7 @@ import { NgToastService } from 'ng-angular-popup';
 export class RegistrationListComponent implements OnInit {
 
   public users!: User[];
+  loading:boolean = true;
   dataSource!: MatTableDataSource<User>;
 
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'email', 'mobile', 'bmiResult', 'gender', 'package', 'enquiryDate','action'];
@@ -33,10 +34,15 @@ export class RegistrationListComponent implements OnInit {
     this.apiService.getRegisteredUser()
       .subscribe({
         next: (res) => {
-          this.users = res;
-          this.dataSource = new MatTableDataSource(this.users);
-          this.dataSource.paginator = this.paginator;
-          this.dataSource.sort = this.sort;
+          if(res){
+            // setTimeout(() => {
+              this.users = res;
+              this.dataSource = new MatTableDataSource(this.users);
+              this.dataSource.paginator = this.paginator;
+              this.dataSource.sort = this.sort;
+              this.loading = false;
+            // }, 2000);
+          }
         },
         error: (err) => {
           console.log(err);
